@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1 id="main">hello world</h1>
-  <button>click</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-screen w-screen grid place-content-center bg-[#f2f2f2]">
+    <form class="flex flex-col bg-white p-4 rounded-md shadow-lg">
+      <label for="name">Name</label>
+      <input id="name" class="border border-slate-300  rounded-sm" />
+      <label for="image">Image URl</label>
+      <input id="image"  class="border border-slate-300 rounded-sm "/>
+      <label for="description">Description</label>
+      <textarea class="border border-slate-300  rounded-sm"  id="description" cols="30" rows="5"></textarea>
+      <input type="submit" value="Submit" class="bg-green-600 py-1 text-white mt-2 hover:opacity-60 cursor-pointer">
+    </form>
 
-
-  <script src="./script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
